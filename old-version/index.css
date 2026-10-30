@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* ===================================
+   Bordeaux Wine Aesthetic
+   =================================== */
+
+:root {
+  /* Bordeaux Palette */
+  --color-burgundy: #6B1B3D;
+  --color-burgundy-dark: #4A1228;
+  --color-wine: #8B2E4F;
+  --color-rose: #A64D6B;
+  --color-mauve: #C4849B;
+
+  --color-cream: #F4EBE0;
+  --color-parchment: #EDE2D4;
+  --color-sand: #E3D5C4;
+  --color-warm: #F9F3EB;
+
+  --color-ink: #2D1F1F;
+  --color-text: #3D2929;
+  --color-text-light: #6B5656;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* Typography */
+  --font-serif: 'Lora', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, sans-serif;
+
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1.063rem;
+  --font-size-md: 1.188rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-2xl: 2.5rem;
+  --font-size-3xl: 3rem;
+
+  --line-height-tight: 1.3;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.75;
+
+  --transition: all 0.3s ease;
+}
+
+/* ===================================
+   Global Styles
+   =================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text);
+  background: linear-gradient(to bottom, var(--color-cream) 0%, var(--color-parchment) 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--color-wine);
+  color: white;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: var(--line-height-tight);
+  color: var(--color-burgundy);
+}
